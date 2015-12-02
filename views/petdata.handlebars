@@ -1,0 +1,14 @@
+<h1>Random Pet: </h1>
+<p>name: {{{name}}}</p>
+<img src="{{photo}}" >
+<p>age: {{age}}</p>
+{{#if breeds}}
+<p>Breeds: 
+{{#each breeds}}
+<p>{{$t}}</p>
+{{/each}}
+{{else}}
+
+<p>Breed: {{breed}}</p>
+{{/if}}
+
